@@ -38,10 +38,18 @@ function gioithieu(){
 
 //bai 07//
 
-function calculator(){
-    console.log("Nhiet do C la:" + 5/9*(prompt("Nhap nhiet do F:")-32))
+function inputF() {
+    const doF = prompt("Nhap do F:");
+    return doF;
 }
-calculator()
+
+function degreeConvert() {
+    abc = inputF();
+    const doC = 5/9*(abc-32);
+    console.log("Nhiet do C la:" + doC)
+}
+
+degreeConvert()
 
 //bai 08//
 
