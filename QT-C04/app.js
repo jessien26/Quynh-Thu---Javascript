@@ -19,8 +19,8 @@ function hienThiSlideTruocDo(){
 
     //Ham dung de an di hinh anh phia sau = hienThiSlideKeTiep
 function hienThiSlideKeTiep(){
+
     images[viTri].style.display = "none"
-    
     if(viTri === images.length -1) {   //Neu vi tri la vi tri cuoi cung thi hien thi hinh anh dau tien
         viTri =0
     }
@@ -29,6 +29,12 @@ function hienThiSlideKeTiep(){
     }
     displayImg(viTri)
 }
+
+setInterval( function() {
+    hienThiSlideKeTiep()
+}, 3000)
+
+
 
 
 
