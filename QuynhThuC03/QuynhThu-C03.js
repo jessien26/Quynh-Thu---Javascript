@@ -60,23 +60,50 @@
 //- Nếu 100 <= số kw < 200, thì tính 2500 đồng/kw.
 //- Nếu số kw từ 200 trở lên thì tính 3500 đồng/kw.
 
-function bai04(){
-    let soKwDien = prompt("Nhap so kw dien:")
-    if(soKwDien <100){
-        return soKwDien*2000
+// function bai04(){
+//     let soKwDien = prompt("Nhap so kw dien:")
+//     if(soKwDien <100){
+//         return soKwDien*2000
+//     }
+//     else{
+//         if(soKwDien < 200){
+//             return soKwDien*2500
+//         }
+//         else{
+//             return soKwDien*3500
+//         }
+//     }
+// }
+// let soTien = bai04()
+// console.log("So tien la: " + soTien + " nghin dong")
+
+//## Bài 5: Loại ký tự
+//Cho phép người dùng nhập vào một ký tự. Hãy cho biết ký tự đó là ký tự hoa, ký tự thường, ký tự số hay ký tự đặc biệt. Biết rằng:
+//- Ký tự hoa gồm: ‘A’, ‘B’,… ‘Z’
+//- Ký tự thường gồm: ‘a’, ‘b’, …, ‘z’
+//- Ký tự số gồm: ‘0’, ‘1’, …, ‘9’
+//- Các ký tự còn lại gọi là ký tự đặc biệt.
+//Quy ước: Hoa/Thuong/So/DB
+
+function phanBietKyTu(){
+
+    let kyTu = input("Nhap ky tu")
+
+    if(typeof kyTu === 'Number'){
+        console.log("Đây là số nhé!")
     }
     else{
-        if(soKwDien < 200){
-            return soKwDien*2500
+        if(A<= kyTu && kyTu >= Z){
+            console.log("Đây là chữ hoa")
         }
         else{
-            return soKwDien*3500
+            if('a'<= kyTu && kyTu >= 'z'){
+            console.log("Đây là chữ thường")
+            }
+            else{
+                console.log("Đây là ký tự đặc biệt")
+            }
         }
     }
 }
-let soTien = bai04()
-console.log("So tien la: " + soTien + " nghin dong")
-
-
-
-
+phanBietKyTu()
